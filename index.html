@@ -4,64 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderlust Weather Dash</title>
-    <link href="./style.css">
-    <link href="api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key};">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-</head>
+    <link href="./Assets/css/style.css">
+    <script src="script.js" defer></script>
+   </head>
 
 <body>
-  <img class="hero" src="./Assets/images/ian-schneider-jk8rarn6lmw-unsplash.jpg">
-  <div>
-    <h1>Weather Dashboard</h1>
-  </div> 
-  
-  <div class="main_city">
-    <div class="current_weather">
-      <div class="weather_dets">
-        <h2>San Antonio Sept. 29, 2023</h2>
-        <h4>Temp: 90° F</h4>
-        <h4>Wind:7.4mph E </h4>
-        <h4>Humidity: 40%</h4>
+  <h1>Weather Dashboard</h1>
+    
+  <div class="container">
+    <div class="weather-input">
+      <h3>Enter City Name</h3>
+      <input class="city-input" type="text" placeholder="Brooklyn" spellcheck="false">
+      <button class="search-btn"><span class="material-symbols-outlined">
+        search</span></button>
+      <div class="separator"></div>
+      <button class="location-btn">location search<span class="material-symbols-outlined">
+        location_searching</span></button>
+    </div>
+    <div class="weather-data">
+      <div class="current-weather">
+        <div class="details">
+          <h2>_______ ( ______ )</h2>
+          <h6>Temperature: __°F</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </div>
+      </div>
+      <div class="days-forecast">
+        <h2>5-Day Forecast</h2>
+        <ul class="weather-cards">
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __F</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __F</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __F</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __F</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __F</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="icon">
-    <img src="" alt="weather icon">
-    <h4>Cloudy</h4>
-  </div>
-  <div class="5_day_card">
-
-  </div>
-  <div class="5_day_card">
-    
-  </div>
-  <div class="5_day_card">
-    
-  </div>
-  <div class="5_day_card">
-    
-  </div>
-  <div class="5_day_card">
-    
-  </div>
-
-  <div class="city_search">
-    <div class="search">
-      <h3>Enter a City Name</h3>
-      <input type="text" placeholder="City Name" spellcheck="false">
-      <button class="search-btn"><span class="material-symbols-outlined">
-        search</span></button>
-      <div class="separator"></div>  
-      <button class="location-btn"><span class="material-symbols-outlined">
-      location_searching</span>Current Location</button>
-    </div>
-  </div>
-
-  <div class="city_list">
-    <div id="size">
-      
-    </div>
-  </div>
+  
 </body>
 <footer>
   <a href="https://www.freepik.com/free-vector/realistic-weather-widget_1531136.htm#query=weather%20background&position=31&from_view=keyword&track=ais">Image by macrovector</a> on Freepik
